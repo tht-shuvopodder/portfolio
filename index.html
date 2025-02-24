@@ -1,0 +1,265 @@
+<!-- https://www.youtube.com/watch?v=7UIBIaEZVWw 
+
+https://www.youtube.com/watch?v=9LZGB3OLXNQ    -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="styles.css">
+        <title>Shuvo Podder</title>
+        <script src="https://kit.fontawesome.com/9c486b03c3.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+        <!--Header section -->
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo.png" alt="Error" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#services">SERVICES</a></li>
+                        <li><a href="#portfolio">PORTFOLIO</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <i class="fas fa-solid fa-arrow-left"  onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+                    <i class="fa-solid fa-sun"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Software Engineer, Researcher</p>
+                    <h1>Hello, I'm <span>Shuvo Podder</span><br> From Bangladesh</h1>
+                </div>
+                <div class="img-box">
+                    <img src="images/pattern.png" alt="Error" class="back-img">
+                    <img src="images/shuvo.png" alt="Error" class="main-img"> 
+                </div>
+                <div class="social-link">
+                    <a href="https://www.linkedin.com/in/shuvo-podder/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/shuvopodder"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://wa.me/qr/NLVB6CQDUNMDK1"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div> 
+
+<!-- about me section-->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src ="images/shuvo.jpg" alt="Error">
+
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>I'm Shuvo Podder.BSC in CSE jointly from Daffodil International University & Chung Ang University, South Korea. Personally interest in AI & IoT.</p>
+                        
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experiences</p>
+                            <p class="tab-links" onclick="opentab('skills')">Skill</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="education">
+                            <ul>
+                                <li><span>2017~2021</span><br>Daffodil International University</li>
+                                <li><span>2019~2020</span><br>Chung Ang University</li>
+
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2021~2022</span><br>Regnum IT LTD.</li>
+                                <li><span>2022~2022</span><br>Japan Bangla Coders LTD.</li>
+                                
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="skills">
+                            <ul>
+                                <li><span>Mobile Application</span><br>Mobile Application</li>
+                                <li><span>AI</span><br>Artificial Intelligent</li>
+                                <li><span>IoT</span><br>Internet Of Things</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!--Services section-->
+
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Expertise</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Mobile Application</h2>
+                        <p>Native Android, Flutter, Java</p>
+                        <a href="services/mobileapp-services.html">learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-globe"></i>
+                        <h2>IOT</h2>
+                        <p>Arduino, ESP, Raspberry Pi, Sensors</p>
+                        <a href="services/iot-services.html">learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-brain-circuit"></i>
+                        <h2>AI</h2>
+                        <p>Computer Vision, Deep Learning, NLP</p>
+                        <a href="services/ai-servicces.html">learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Porfolio-->
+
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/idea.png" alt="Error">
+                        <div class="layer">
+                            <h3>Violence Activity Recognition</h3>
+                            <p>Computer Vision based violation recognition</p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/smartalert.png" alt="Error">
+                        <div class="layer">
+                            <h3>Smart Alert</h3>
+                            <p>IoT Smart Monitoring</p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/emotion-recognition.jpg" alt="Error">
+                        <div class="layer">
+                            <h3>Emotion Recognition</h3>
+                            <p>NLP based human emotion recognition</p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+
+<!--Porfolio  End-->
+
+<!-- Contact info-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title"> Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>shuvopodder9@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+8801731261732</p>
+
+
+                <a href="doc/mycv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form id="submit-to-google-sheet">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea type="text" name="description" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="mgs"></span>
+
+                <!--Information submitted for your reference.-->
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- Contact End-->
+
+
+        <!-- https://www.youtube.com/watch?v=UpkEANWC2Ms 
+             https://www.youtube.com/watch?v=0YFrGy_mzjY&t=74s  -->
+        <footer>
+            <div class="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+            </div>
+            <ul class="social_icon">
+                <!-- https://ionic.io/ionicons -->
+                <li><a href="https://www.facebook.com/shuvo.podder.09"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a href="https://twitter.com/shuvo_podder"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                <li><a href="https://www.linkedin.com/in/shuvo-podder/"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                <li><a href="https://www.instagram.com/shuvo_podder/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                <li><a href="https://github.com/shuvopodder"><ion-icon name="logo-github"></ion-icon></a></li>
+            </ul>
+            <ul class="menu">
+            </ul>
+            <br>
+            <p>
+                © 2024 Shuvo Podder. All rights reserved.
+            </p>
+        </footer>
+        
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+
+        <script>
+            var slidemenu = document.getElementById("sidemenu");
+            function openmenu(){
+                sidemenu.style.right="0";
+            }
+            function closemenu(){
+                sidemenu.style.right="-200px";
+            }
+        </script>
+
+        <script>
+            var icon = document.getElementById("icon");
+        </script>
+
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyc2u1EVXjA9U2uX8tj3NFpiObSfID3GGmWNYLxvYLMev8Cq4PpfHLINTdQ96UFWyz6NA/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const mgs = document.getElementById("mgs")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    mgs.innerHTML = "Information sent successfully!"
+                    setTimeout(function(){
+                        mgs.innerHTML = ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+        </script>
+    </body>
+</html>
